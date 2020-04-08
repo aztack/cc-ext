@@ -1,0 +1,31 @@
+{
+  "name": "cc-ext",
+  "version": "0.0.1",
+  "description": "The Cocos Creator Extension",
+  "author": "aztack <aztack@163.com>",
+  "main": "index.js",
+  "main-menu": {
+    "i18n:MAIN_MENU.package.title/i18n:cc-ext.title/i18n:cc-ext.settings": {
+      "command": "Editor.Panel.open",
+      "params": [
+        "cc-ext"
+      ]
+    },
+    "i18n:MAIN_MENU.package.title/i18n:cc-ext.title/i18n:cc-ext.inject": {
+      "message": "cc-ext:init"
+    }
+  },
+  "panel": {
+    "main": "panel/index.js",
+    "type": "dockable",
+    "title": "i18n:cc-ext.settings",
+    "width": 300,
+    "height": 800
+  },
+  "profiles": {
+    "project": {
+      "docs": "http://docs.cocos.com/creator/manual/zh/",
+      "forum": "http://forum.cocos.com/c/Creator"
+    }
+  }
+}
